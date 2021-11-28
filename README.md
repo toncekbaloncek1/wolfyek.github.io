@@ -1,2 +1,2 @@
 # wolfyek.github.io
-[wolfyek website](https://wolfyek.ga)
+[Wolfy's Website](https://wolfyek.ga)
