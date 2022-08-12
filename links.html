@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Wolfy's links</title>
+
+    <style>
+        html {
+            height: 100vh;
+        }
+
+        body {
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .linktree_container {
+            margin: 0 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .linktree_links_container {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .linktree_name {
+            margin: 1rem;
+        }
+
+        a {
+            color: white;
+        }
+
+        .linktree_name {
+            color: whitesmoke;
+        }
+
+        .linktree_item {
+            width: 100%;
+            border-radius: 999px;
+            background: var(--secondary);
+            padding: 1rem 0;
+            text-decoration: none;
+            animation: ease-in-out;
+        }
+
+        .linktree_item:hover {
+            opacity: .8;
+        }
+
+        @media only screen and (max-width: 550px) {
+            .linktree_links_container {
+                width: 95vw;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="linktree_container">
+        <div class="linktree_profile_img">
+            <img src="images/logo.png" alt="logo">
+            <h1 class="linktree_name">Wolfy</h1>
+        </div>
+        <div class="linktree_links_container">
+            <a target="_blank" class="linktree_item" href="https://www.youtube.com/c/WolfysStreams">Youtube Channel</a>
+            <a target="_blank" class="linktree_item" href="https://www.instagram.com/young.farkas">Instagram</a>
+            <a target="_blank" class="linktree_item" href="https://www.snapchat.com/add/farkas.timi">Snapchat</a>
+            <a target="_blank" class="linktree_item" href="index.html">My Website</a>
+            <a target="_blank" class="linktree_item" href="donate.html">Buy me a coffee</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

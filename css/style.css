@@ -2,8 +2,8 @@
 @import url(https://fonts.googleapis.com/css?family=Muli);
 
 @font-face {
-  font-family: 'Avenir Light';
-  src: url('../Avenir-Light.ttf') format('ttf'),
+    font-family: 'Avenir Light';
+    src: url('../Avenir-Light.ttf') format('ttf'),
 }
 
 :root {
@@ -77,26 +77,37 @@ header.page-header {
 }
 
 #topNav {
+    margin: 0 1rem;
     max-width: 100vw;
-    background-color: rgba(23, 23, 23, .9);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#topNav>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#topNav>ul>li>a {
+    color: #b3b3b3;
 }
 
 .banner {
     color: white;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background: var(--bg);
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.header-item {
-    margin: 20px;
-    margin-top: 25vh;
+    gap: 3rem;
 }
 
 .hero-text {
@@ -552,17 +563,6 @@ input {
     color: #ffffff;
 }
 
-.navbar-toggler {
-    padding: .5rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background: 0 0;
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    color: #fff;
-    margin: 28px 15px 10px;
-}
-
 .icon i {
     color: b3b3b3;
     font-size: 50px;
@@ -705,10 +705,6 @@ header.page-header .main-menu {
     position: relative;
 }
 
-.navbar-brand img {
-    margin-top: 10px;
-}
-
 .main-menu .navbar-nav {
     float: right;
     padding: 20px 0;
@@ -741,6 +737,7 @@ header.page-header .main-menu {
 
 .selected-lang {
     color: #fff !important;
+
 }
 
 .main-menu .navbar-nav li a:focus {
@@ -1505,7 +1502,7 @@ footer .footer-containertent {
 
 footer .footer-logo {
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 footer p {
@@ -1613,48 +1610,6 @@ footer ul li a i {
     overflow: hidden;
 }
 
-/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    .main-menu.minified {
-        background-color: #28292e;
-        padding: 20px 0 0;
-        position: fixed;
-    }
-
-    .navbar-header {
-        float: none;
-        text-align: center;
-    }
-
-    .navbar-brand {
-        float: none;
-        font-size: 18px;
-        line-height: 20px;
-        padding: 15px;
-    }
-
-    .navbar-collapse {
-        text-align: center;
-    }
-
-    .main-menu .navbar-nav {
-        display: inline-block;
-        float: none;
-    }
-
-    .navbar-nav>li {
-        display: inline-block;
-        float: none;
-        margin-bottom: 5px;
-    }
-
-    .portfolio-items .portfolio-item {
-        height: 280px;
-        overflow: hidden;
-        position: relative;
-        width: 33.33331%;
-    }
-} */
-
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     /* .main-menu.minified {
         background-color: #28292e;
@@ -1718,14 +1673,6 @@ footer ul li a i {
         padding: 1rem 0;
     }
 
-    .logo {
-        margin-top: 20px !important;
-    }
-
-    .navbar-toggler {
-        margin-top: 10px !important;
-    }
-
     .navbar-brand {
         float: none;
         height: 0;
@@ -1766,11 +1713,7 @@ footer ul li a i {
     }
 
     .main-menu .navbar-nav li {
-        display: block;
-        width: 100%;
-        text-align: right;
         padding: 8px 10px;
-        background: rgb(26, 26, 25);
     }
 
     .navbar-brand img {
@@ -1870,28 +1813,22 @@ footer ul li a i {
     }
 
     /* Header */
+    .profile-card {
+        margin: 20% 0;
+    }
+
     .banner {
         height: 100%;
         text-align: center;
     }
 
     .header {
-        margin-top: 0;
         flex-direction: column;
-    }
-
-    .header-item {
-        margin-top: 0;
-        /* margin-bottom: 100px; */
-    }
-
-    .header:first-child {
-        padding-top: 15vh;
     }
 
     .hero-text {
         padding: 20px;
-        /* max-width: 400px; */
+        margin-bottom: 30%;
     }
 
     .hero-text>h1 {
