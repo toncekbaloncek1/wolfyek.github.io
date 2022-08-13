@@ -31,10 +31,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            align-items: center;
         }
 
         .linktree_links_container {
-            width: 500px;
+            width: 600px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -42,29 +43,26 @@
             gap: 1rem;
         }
 
-        .linktree_name {
-            margin: 1rem;
-        }
-
         a {
             color: white;
-        }
-
-        .linktree_name {
-            color: whitesmoke;
         }
 
         .linktree_item {
             width: 100%;
             border-radius: 999px;
             background: var(--secondary);
-            padding: 1rem 0;
+            padding: .7rem 0;
             text-decoration: none;
             animation: ease-in-out;
         }
 
         .linktree_item:hover {
             opacity: .8;
+        }
+
+        .linktree_profile_img {
+            width: 256px;
+            height: 256px;
         }
 
         @media only screen and (max-width: 550px) {
@@ -78,10 +76,8 @@
 
 <body>
     <div class="linktree_container">
-        <div class="linktree_profile_img">
-            <img src="images/logo.png" alt="logo">
-            <h1 class="linktree_name">Wolfy</h1>
-        </div>
+        <img class="linktree_profile_img" src="images/logo.png" alt="logo">
+
         <div class="linktree_links_container">
             <a target="_blank" class="linktree_item" href="https://www.youtube.com/c/WolfysStreams">Youtube Channel</a>
             <a target="_blank" class="linktree_item" href="https://www.instagram.com/young.farkas">Instagram</a>
